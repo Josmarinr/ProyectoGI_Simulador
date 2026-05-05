@@ -126,6 +126,39 @@ Discos predefinidos en TagDatabase:
 4. Topología se actualiza en tiempo real
 5. Ver console para debug
 
+## Pruebas
+
+### Ejecutar Tests en Unity
+
+1. Window → Test Runner
+2. Seleccionar pestaña "Play Mode"
+3. Click "Run All" o ejecutar test específico
+
+### Cobertura de Tests
+
+| Suite | Casos | Descripción |
+|-------|-------|-------------|
+| TagDatabaseTests | 11 | Pruebas de mapeo QR → tipo disco |
+| NetworkManagerTests | 20 | Pruebas de gestión de nodos y conexiones |
+
+**Total: 31 unit tests**
+
+### Casos de Prueba Principales
+
+```csharp
+// TagDatabase
+GetTipo_QRIdValido_ReturnsRouter()
+GetTipo_QRIdDesconocido_ReturnsDesconocido()
+TryGetDisco_QRIdValido_ReturnsTrue()
+ObtenerTodos_Returns14Discos()
+
+// NetworkManager
+AgregarNodo_QRIdValido_NodoAgregado()
+HayCamino_NodosConectados_True()
+HayCamino_NodosNoConectados_False()
+AgregarConexion_DosNodos_ConexionCreada()
+```
+
 ## API
 
 ```csharp

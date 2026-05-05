@@ -1,0 +1,16 @@
+{
+    "name": "MesaTangible.Tests",
+    "rootNamespace": "MesaTangible.Tests",
+    "references": [
+        "MesaTangible.Redes"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
